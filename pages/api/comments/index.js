@@ -7,6 +7,7 @@ export default function handler(req, res) {
     }
     else if (req.method === 'POST') {
         const data = req.body.comment;
+
         const newComment = {
             id: Date.now(),
             text: data
